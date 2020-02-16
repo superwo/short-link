@@ -1,0 +1,36 @@
+{
+  "name": "short-links",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superwo/short-link.git"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Radu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superwo/short-link/issues"
+  },
+  "homepage": "https://github.com/superwo/short-link#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
