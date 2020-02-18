@@ -5,8 +5,11 @@ import { AuthContext } from '../context/AuthContext';
 
 export const AuthPage = () => {
   const auth = useContext(AuthContext);
+
   const { loading, request, error, clearError } = useHttp();
+
   const message = useMessage();
+
   const [form, setForm] = useState({
     email: '',
     password: ''
@@ -16,6 +19,10 @@ export const AuthPage = () => {
     message(error);
     clearError();
   }, [error, message, clearError]);
+
+  useEffect(() => {
+    window.M.updateTextFields();
+  }, []);
 
   const changeHandler = event => {
     setForm({ ...form, [event.target.name]: event.target.value });
